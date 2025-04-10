@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://mobiledev.domeggook.com"
+    baseUrl: ""
   },
   env: {
     // Cypress 환경 변수 설정
@@ -12,5 +12,6 @@ module.exports = defineConfig({
     SELLER_SECRET: "", // 판매자 비밀번호
     ITEM_NO: "", // 결제할 상품 번호
     PAY_METHOD: "", // 결제 방법 (POINT or EMONEY)
+    ORDER_NO: "", // 주문 번호
   }
 });

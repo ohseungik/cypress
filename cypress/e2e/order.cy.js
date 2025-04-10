@@ -5,7 +5,7 @@
 
 describe('Order', () => {
     beforeEach(() => {
-        if(Cypress.env('BUYER_ID') === "" || Cypress.env('BUYER_SECRET') === "" || Cypress.env('ITEM_NO') === "" || Cypress.env('PAY_METHOD') === "") {
+        if (!Cypress.env('BUYER_ID') || !Cypress.env('BUYER_SECRET') || !Cypress.env('ITEM_NO') || !Cypress.env('PAY_METHOD')) {
             throw new Error('Cypress 환경 변수가 설정되지 않았습니다. cypress.config.js 파일을 확인하세요.');
         }
 
